@@ -1,14 +1,16 @@
 # about-me
-WDI project 0 - about me
+WDI Project 0 - Create an About Me Website
 
-##Technologies Used
+## Technologies Used
+
 * HTML
 * CSS
 * Javascript/jQuery
 * Other here
 
 
-##Process
+## Process
+
 1. Review requirements and outline a plan in README
 2. Get inspiration from other portfolio/about me websites
 	* Timebox this to 10 minutes
@@ -33,11 +35,12 @@ WDI project 0 - about me
 	* Commit as sections are completed
 
 
-##Unsolved Problems
+## Unsolved Problems
 
 
-##Wins and Challenges
-###Wins
+## Wins and Challenges
 
-###Challenges
+### Wins
+
+### Challenges
 
