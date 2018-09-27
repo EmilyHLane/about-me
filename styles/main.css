@@ -1,0 +1,35 @@
+#hide-hamburger {
+	display: none;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 1);
+	height: 215px;
+	width: 100%;
+}
+
+.nav-links {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	color: white;
+	font-size: 1.4em;
+	padding: 1em 0 0 1em;
+	text-decoration: none;
+}
+
+.fa-times {
+	color: white;
+	font-size: 2em;
+	padding: .5em;
+	z-index: 1;
+}
+
+#hide-close {
+	display: none;
+}
