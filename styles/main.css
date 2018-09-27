@@ -1,8 +1,27 @@
-#hide-hamburger {
+/*-----small screen closed nav-----*/
+#nav-hide {
 	display: none;
 }
 
-.nav-container {
+#close-hide {
+	display: none;
+}
+
+.fa-bars {
+    font-size: 2em;
+    padding: .1em .5em .5em;
+}
+
+.fa-bars:hover {
+	color: pink;
+}
+
+/*-----small screen open nav-----*/
+#hamburger-hide {
+	display: none;
+}
+
+.nav-small {
 	display: flex;
 	justify-content: space-between;
 	background-color: rgba(0, 0, 0, 1);
@@ -23,13 +42,12 @@ a {
 	text-decoration: none;
 }
 
-.fa-times {
+.close-show {
 	color: white;
 	font-size: 2em;
 	padding: .5em;
 	z-index: 1;
 }
 
-#hide-close {
-	display: none;
-}
+/*----- -----*/
+
