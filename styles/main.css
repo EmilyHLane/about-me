@@ -9,7 +9,7 @@ body {
 }
 
 /*-----small screen closed nav-----*/
-#nav-hide {
+.nav-hide {
 	display: none;
 }
 
@@ -35,32 +35,56 @@ body {
 	display: none;
 }
 
-.nav-small {
-	background-color: rgba(0, 0, 0, 1);
-	display: flex;
-	height: 215px;
-	justify-content: space-between;
+.nav-container {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 }
 
-.nav-links {
+.nav-small {
+	background-color: rgba(0, 0, 0, .7);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 2em;
+	text-align: left;
+	width: 100%;
+	height: 300px;
+}
+
+/*.nav-links {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-}
+}*/
 
 a {
 	color: white;
 	font-size: 1.4em;
-	padding: 1em 0 0 1em;
+	margin-right: 3em;
+	padding: 1em 1em 0 1em;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
 }
 
 .close-show {
 	color: white;
 	font-size: 2em;
 	padding: .5em;
+	position: absolute;
 	z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+.close-show:hover {
+	color: pink;
 }
 
 /*-----intro-----*/
@@ -200,6 +224,10 @@ footer p {
  
 	/*-----intro med screens-----*/
 
+	.fa-bars {
+    	color: black;
+    }
+
 	.intro-container {
 		display: flex;
 		flex-direction: row;
@@ -229,12 +257,12 @@ footer p {
 		margin-right: 4em;
 	   	text-align: right;
 	   	width: 100%;
+	   	color: black;
 	}
 
 	.intro-container {
 		background-image: url("../images/FPO_background.jpg");
 		background-size: cover;
-		height: 200px;
 	}
 
 	.about-container {
@@ -276,7 +304,46 @@ footer p {
 @media only screen and (min-width: 960px) {
 
 	header, main, footer {
-		margin: 0 7em;
+		margin: 0 6em;
+	}
+
+	#hide-bars-lg {
+		display: none;
+	}
+
+	.nav-container {
+		position: static;
+	}
+
+	.top-nav {
+		align-items: center;
+		background-color: rgba(0, 0, 0, .7);
+		display: flex;
+		flex-direction: row;
+		height: 60px;
+		text-align: left;
+		width: 100%;
+	}
+
+	a {
+		padding-bottom: 1em;
+		padding-left: 0;
+		font-size: 1.2em;
+		margin-right: 1.5em;
+
+	}
+
+	.nav-about {
+		width: 50px;
+		margin-left: .5em;
+	}
+
+	.nav-port {
+		width: 69px;
+	}
+
+	.nav-test {
+		width: 97px;
 	}
 
 	.name-email-phone-container {
@@ -291,12 +358,13 @@ footer p {
 	.email-input {
 		width: 43%;
 	}
+
 	.phone-input {
 		width: 22%;
 	}
 
 	textarea {
-	height: 200px;
+		height: 200px;
 	}
 
 }
