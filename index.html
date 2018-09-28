@@ -28,44 +28,47 @@
 
 	<main>
 		<section id="intro" class="intro-container">
-			<img src="" alt="photo of Emily"/> 
-			<div class="name-title">
+			<div class="profile-pic-container">
+				<img class="profile-pic" src="images/FPO.jpg" alt="photo of Emily"/>
+			</div> 
+			<div class="name-title-container">
 				<h1>Emily Lane</h1>
-				<p>Web Developer</p>
+				<p class="title">Web Developer</p>
 			</div>
 		</section>
 
 		<section id="about" class="about-container">
-			<h2>About Me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ullam unde suscipit distinctio, nam labore, minus ea. Maiores, a ex tenetur, cumque cum, quod nesciunt dolores blanditiis vitae est dolorum!</p>
+			<h2 class="about-heading">About Me</h2>
+			<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ullam unde suscipit distinctio, nam labore, minus ea. Maiores, a ex tenetur, cumque cum, quod nesciunt dolores blanditiis vitae est dolorum!</p>
 		</section>
 
 		<section id="portfolio" class="portfolio-container">
-			<h2>Portfolio</h2>
-			<div class="carousel-container"></div>
+			<h2 class="">Portfolio</h2>
+			<div class="carousel-container">Carousel Here</div>
 		</section>
 
-		<section id="testimonials" class="testimonials-container">
+		<section id="testimonials" class="test-container">
 			<h2>Testimonials</h2>
 			<article class="testimonial-1">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit expedita rerum ad ratione impedit quidem saepe quos aliquam sunt eligendi doloremque laborum accusamus delectus cupiditate similique optio, sit. Modi, officia!</p>
 			</article>
 
-			<article class="testimonial-3">
+			<article class="testimonial-2" id="test-hide">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum odio, doloribus cupiditate velit quae deserunt cumque vero autem atque! Quasi distinctio dolores quis architecto aut nihil molestias vero consequuntur odio?</p>
 			</article>
 
-			<article class="testimonial-4">
+			<article class="testimonial-3" id="test-hide">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eligendi doloribus quia corrupti, quisquam itaque, perferendis praesentium deserunt dolore adipisci sit accusantium debitis autem pariatur blanditiis natus nihil enim aliquid.</p>
 			</article>
 		</section>
 		
 
 		<section id="contact" class="contact-container">
-			<form action="" method="POST">
-				<input type="text" name="name"/>
-				<input type="email" name="email"/>
-				<input type="tel" name="phone"/>
+			<h2>Contact Emily</h2>
+			<form class="contact-form" action="" method="POST">
+				<input type="text" name="name" placeholder="Your Name" />
+				<input type="email" name="email" placeholder="Email" />
+				<input type="tel" name="phone" placeholder="Phone number" />
 				<textarea placeholder="Message"></textarea>
 				<button type="submit" name="">Contact</button>
 			</form>

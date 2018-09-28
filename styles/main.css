@@ -1,3 +1,7 @@
+/*-----global styles-----*/
+body {
+	margin: 0;
+}
 /*-----small screen closed nav-----*/
 #nav-hide {
 	display: none;
@@ -49,5 +53,124 @@ a {
 	z-index: 1;
 }
 
-/*----- -----*/
+/*-----small screen intro -----*/
+.intro-container, .name-title-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile-pic-container {
+	width: 350px;
+	margin: 0 auto;
+}
+
+.profile-pic {
+	width: 100%;
+}
+
+h1 {
+	margin: 0.3em 0 0 0;
+}
+
+.title {
+	margin: .3em 0 2em 0;
+	padding: 0;
+}
+
+/*----about-----*/
+
+.about-container {
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+	padding-top: 1em;
+}
+
+p, .contact-form {
+	padding: 1em 1em 2em;
+	margin: 0 .5em 0;
+}
+
+.portfolio-container {
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 300px;
+	width: 100%;
+}
+
+.carousel-container {
+	background-color: lightgrey;
+	height: 200px;
+	margin-top: 1em;
+	width: 95%;
+}
+
+/*-----Testimionials-----*/
+#test-hide {
+	display: none;
+}
+
+.test-container {
+	height: 200px;
+	background-color: lightgreen;
+}
+
+/*-----contact-----*/
+
+.contact-container {
+	background-color: lightblue;
+	height: 475px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea, button {
+	padding: 1em;
+	font-size: 1em;
+	border: 1px solid white;
+}
+
+input, textarea {
+	margin-bottom: 1em;
+}
+
+button {
+    margin-top: 1.5em;
+    width: 30%;
+}
+
+/*-----footer-----*/
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+footer p {
+	padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
