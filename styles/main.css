@@ -18,9 +18,12 @@ body {
 }
 
 .fa-bars {
-    font-size: 2em;
-    padding: .1em .5em .5em;
     color: white;
+    font-size: 2em;
+    left: .5em;
+    padding: .1em .5em .5em;
+    position: absolute;
+    top: .5em;
 }
 
 .fa-bars:hover {
