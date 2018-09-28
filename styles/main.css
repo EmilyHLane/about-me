@@ -1,7 +1,9 @@
 /*-----global styles-----*/
 body {
 	margin: 0;
+	font-family: 'Arsenal', sans-serif;
 }
+
 /*-----small screen closed nav-----*/
 #nav-hide {
 	display: none;
@@ -53,28 +55,36 @@ a {
 	z-index: 1;
 }
 
-/*-----small screen intro -----*/
+/*-----intro-----*/
 .intro-container, .name-title-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: yellow;
 }
 
 .profile-pic-container {
 	width: 350px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
 .profile-pic {
-	width: 100%;
+	width: 200px;
+	height: 200px;
+	border: 1px solid white;
+	border-radius: 5%
 }
 
 h1 {
+	font-size: 1.7em;
 	margin: 0.3em 0 0 0;
 }
 
 .title {
-	margin: .3em 0 2em 0;
+	font-size: 1.5em;
+	margin-bottom: 1em;
 	padding: 0;
 }
 
@@ -95,6 +105,8 @@ h2 {
 p, .contact-form {
 	padding: 1em 1em 2em;
 	margin: 0 .5em 0;
+	font-size: 1.2em;
+    line-height: 1.6em;
 }
 
 .portfolio-container {
@@ -102,13 +114,13 @@ p, .contact-form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 
 .carousel-container {
 	background-color: lightgrey;
-	height: 200px;
+	height: 300px;
 	margin-top: 1em;
 	width: 95%;
 }
@@ -119,7 +131,6 @@ p, .contact-form {
 }
 
 .test-container {
-	height: 200px;
 	background-color: lightgreen;
 }
 
@@ -127,7 +138,7 @@ p, .contact-form {
 
 .contact-container {
 	background-color: lightblue;
-	height: 475px;
+	height: 600px;
 }
 
 .contact-form {
@@ -145,8 +156,11 @@ input, textarea {
 	margin-bottom: 1em;
 }
 
+textarea {
+	height: 100px;
+}
+
 button {
-    margin-top: 1.5em;
     width: 30%;
 }
 
@@ -162,11 +176,29 @@ footer p {
 	padding: 1em;
 }
 
+/*-------------------------------------*/
+/*     MEDIUM SCREENS 700PX AND UP     */
+/*-------------------------------------*/
+
+@media only screen and (max-width: 700px) {
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*end of medium media query*/	
+}
 
 
 
