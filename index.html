@@ -31,9 +31,9 @@
 
 	<main>
 		<section id="intro" class="intro-container">
-			<div class="profile-pic-container">
-				<img class="profile-pic" src="images/FPO.jpg" alt="photo of Emily"/>
-			</div> 
+<!-- 		<div class="profile-pic-container">
+				 <img class="profile-pic" src="images/Liebe.jpg" alt="photo of Emily's cat"/>
+			</div>  --> 
 			<div class="name-title-container">
 				<h1>Emily Lane</h1>
 				<p class="title">Web Developer</p>
@@ -115,9 +115,11 @@
 		<section id="contact" class="contact-container">
 			<h2>Contact Emily</h2>
 			<form class="contact-form" action="" method="POST">
-				<input type="text" name="name" placeholder="Your Name" />
-				<input type="email" name="email" placeholder="Email" />
-				<input type="tel" name="phone" placeholder="Phone number" />
+				<div class="name-email-phone-container">
+					<input class="name-input" type="text" name="name" placeholder="Your Name" />
+					<input class="email-input" type="email" name="email" placeholder="Email" />
+					<input class="phone-input" type="tel" name="phone" placeholder="Phone number" />
+				</div>
 				<textarea placeholder="Message"></textarea>
 				<button type="submit" name="">Contact</button>
 			</form>

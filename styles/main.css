@@ -1,11 +1,11 @@
-/*TODO: fix carousel header and text display*/
 
 /*-----global styles-----*/
 body {
 	background-color: rgb(249, 249, 249);
 	box-sizing: border-box;
 	font-family: 'Arsenal', sans-serif;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 1056px;
 }
 
 /*-----small screen closed nav-----*/
@@ -20,6 +20,7 @@ body {
 .fa-bars {
     font-size: 2em;
     padding: .1em .5em .5em;
+    color: white;
 }
 
 .fa-bars:hover {
@@ -60,13 +61,23 @@ a {
 }
 
 /*-----intro-----*/
+.intro-container {
+	background-image: url("https://picsum.photos/600/700/?random");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	justify-content: flex-end;
+	color: white;
+}
+
 .intro-container, .name-title-container{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 }
 
-.profile-pic-container {
+/*-----profile pic styles if needed-----*/
+/*.profile-pic-container {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
@@ -74,11 +85,9 @@ a {
 }
 
 .profile-pic {
-	border-radius: 5%
 	border: 1px solid white;
 	height: 200px;
-	width: 200px;
-}
+}*/
 
 h1 {
 	font-size: 1.7em;
@@ -117,7 +126,7 @@ p, .contact-form {
 	background-color: pink;
 	display: flex;
 	flex-direction: column;
-	height: 400px;
+	height: 450px;
 	width: 100%;
 }
 
@@ -261,7 +270,30 @@ footer p {
 /*-------------------------------------*/
 /*     LARGE SCREENS 960PX AND UP     */
 /*-------------------------------------*/
+@media only screen and (min-width: 960px) {
 
+	header, main, footer {
+		margin: 0 7em;
+	}
 
+	.name-email-phone-container {
+		display: flex;
+		justify-content: space-between;
+	}
 
+	.name-input {
+		width: 33%;
+	}
 
+	.email-input {
+		width: 43%;
+	}
+	.phone-input {
+		width: 22%;
+	}
+
+	textarea {
+	height: 200px;
+	}
+
+}
