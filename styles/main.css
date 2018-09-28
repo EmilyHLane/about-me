@@ -1,7 +1,9 @@
 /*-----global styles-----*/
 body {
-	margin: 0;
+	background-color: rgb(249, 249, 249);
+	box-sizing: border-box;
 	font-family: 'Arsenal', sans-serif;
+	margin: 0;
 }
 
 /*-----small screen closed nav-----*/
@@ -28,17 +30,17 @@ body {
 }
 
 .nav-small {
-	display: flex;
-	justify-content: space-between;
 	background-color: rgba(0, 0, 0, 1);
+	display: flex;
 	height: 215px;
+	justify-content: space-between;
 	width: 100%;
 }
 
 .nav-links {
-	text-align: left;
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 }
 
 a {
@@ -57,24 +59,23 @@ a {
 
 /*-----intro-----*/
 .intro-container, .name-title-container{
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background-color: yellow;
 }
 
 .profile-pic-container {
-	width: 350px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	margin: 0 auto;
+	width: 350px;
 }
 
 .profile-pic {
-	width: 200px;
-	height: 200px;
-	border: 1px solid white;
 	border-radius: 5%
+	border: 1px solid white;
+	height: 200px;
+	width: 200px;
 }
 
 h1 {
@@ -97,23 +98,23 @@ h1 {
 }
 
 h2 {
-	text-align: center;
 	margin: 0;
 	padding-top: 1em;
+	text-align: center;
 }
 
 p, .contact-form {
-	padding: 1em 1em 2em;
-	margin: 0 .5em 0;
 	font-size: 1.2em;
+	margin: 0 .5em 0;
+	padding: 1em 1em 2em;
     line-height: 1.6em;
 }
 
 .portfolio-container {
+	align-items: center;
 	background-color: pink;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	height: 400px;
 	width: 100%;
 }
@@ -147,9 +148,9 @@ p, .contact-form {
 }
 
 input, textarea, button {
-	padding: 1em;
-	font-size: 1em;
 	border: 1px solid white;
+	font-size: 1em;
+	padding: 1em;
 }
 
 input, textarea {
@@ -180,28 +181,88 @@ footer p {
 /*     MEDIUM SCREENS 700PX AND UP     */
 /*-------------------------------------*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 700px) {
+ 
+	/*-----intro med screens-----*/
 
+	.intro-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
+	.profile-pic-container {
+		width: 50%
+	}
 
+	.name-title-container {
+		display: block;
+		width: 50%
+	}
 
+	.title {
+		margin: 0;
+	}
 
+	/*-----about med screens-----*/
 
+	.profile-pic-container {
+		display: none;
+	}
 
+	.name-title-container {
+		margin-right: 4em;
+	   	text-align: right;
+	   	width: 100%;
+	}
 
+	.intro-container {
+		background-image: url("../images/FPO_background.jpg");
+		background-size: cover;
+		height: 200px;
+	}
 
+	.about-container {
+		display: block;
+	}
 
+	.about-paragraphs {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
+	.about-text {
+		margin: 0;
+		width: 50%;
+	}
 
+	.about-text:nth-of-type(1) {
+		padding-left: 3em;
+	}
 
+	.about-text:nth-of-type(2) {
+		padding-right: 3em
+	}
 
+	.test-container {
+		padding: 0 3em;
+	}
 
+	.contact-form {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
 
-/*end of medium media query*/	
+	button {
+		width: 40%;
+	}
+
 }
 
-
-
+/*-------------------------------------*/
+/*     LARGE SCREENS 960PX AND UP     */
+/*-------------------------------------*/
 
 
 
