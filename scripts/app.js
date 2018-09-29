@@ -28,14 +28,15 @@ function closeNav() {
     //slide nav up
 }
 
-function testPosition() {
-	var tP = $(".test-container");
-	var offset = tP.offset();
-	console.log(offset);
-}
+// function testPosition() {
+// 	var tP = $(".test-container");
+// 	var offset = tP.offset();
+// 	console.log(offset);
+// }
 
-testPosition();
+// testPosition();
 
+//set listener for scroll and resize to check if testimonial section visible 
 $(window).on("resize scroll", function() {
 	var elementTop = $(".test-container").offset().top;
 	var elementBottom = elementTop + $(".test-container").outerHeight();
@@ -50,12 +51,13 @@ $(window).on("resize scroll", function() {
 //code to fade in/out here
 function fadeInOut() {
 	console.log("Fade Away");
-	//set timer
-	//fade out
-	//call function to fade in
-	
-}
-	
+	$(".is-visible").fadeOut(1200);
+};
+
+// $(".is-visible").on("click", function() {
+// 	$(".is-visible").fadeOut("slow");
+// });
+
 
 
 	
