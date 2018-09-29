@@ -51,12 +51,9 @@ $(window).on("resize scroll", function() {
 //code to fade in/out here
 function fadeInOut() {
 	console.log("Fade Away");
-	$(".is-visible").fadeOut(1200);
-};
-
-// $(".is-visible").on("click", function() {
-// 	$(".is-visible").fadeOut("slow");
-// });
+	setTimeout(function () {
+		$(".is-visible").fadeOut(500);
+	}, 3000)}
 
 
 
