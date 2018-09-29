@@ -28,6 +28,35 @@ function closeNav() {
     //slide nav up
 }
 
+function testPosition() {
+	var tP = $(".test-container");
+	var offset = tP.offset();
+	console.log(offset);
+}
+
+testPosition();
+
+$(window).on("resize scroll", function() {
+	var elementTop = $(".test-container").offset().top;
+	var elementBottom = elementTop + $(".test-container").outerHeight();
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+	console.log(`EB ${elementBottom}, VT ${viewportTop}, ET ${elementTop}, VB ${viewportBottom}`);
+	if (elementBottom > viewportTop && elementTop < viewportBottom) {
+		fadeInOut();
+	};
+});
+
+//code to fade in/out here
+function fadeInOut() {
+	console.log("Fade Away");
+	//set timer
+	//fade out
+	//call function to fade in
+	
+}
+	
+
 
 	
 
