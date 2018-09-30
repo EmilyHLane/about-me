@@ -54,7 +54,7 @@ body {
   	animation-name: slideDown;
   	animation-duration: 1s;
 }
-/*-----animations------*/
+
 @keyframes slideDown {
   from {
     transform: translate(0, -100%);
@@ -67,7 +67,21 @@ body {
   }
 }
 
-/*-------------------------*/
+.nav-small-slideUp {
+	animation-name: slideUp;
+	animation-duration: 1s;
+}
+
+@keyframes slideUp {
+  from {
+	transform: translate(0, 0);
+  }
+
+  to {
+   	transform: translate(0, -100%);
+   	display: none;
+  }
+}
 
 a {
 	color: white;
