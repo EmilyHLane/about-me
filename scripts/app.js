@@ -25,17 +25,18 @@ function closeNav() {
  	$(".nav-links").toggleClass("nav-hide");
     $(".fa-times").toggleClass("close-show");
     $(".fa-times").attr("id", "close-hide");
-    $(".fa-bars").toggle("#hamburger-hide");
+    // $(".fa-bars").toggle("#hamburger-hide");
     //slide nav up--->before hiding, slide it up -->add delay to hide?
     $(".nav-links").toggleClass("nav-small-slideUp");
     setTimeout(function () {
     	$(".nav-links").toggleClass("nav-small");
+    	$(".fa-bars").toggle("#hamburger-hide");
     }, 1000);
 }
 
 
-//smooth scrolling for links
-$(document).on('click', 'a[href^="#"]', function (e) {
+//smooth scrolling for nav links
+$(document).on('click', '.nav-links a[href^="#"]', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
