@@ -51,7 +51,23 @@ body {
 	text-align: left;
 	width: 100%;
 	height: 300px;
+  	animation-name: slideDown;
+  	animation-duration: 1s;
 }
+/*-----animations------*/
+@keyframes slideDown {
+  from {
+    transform: translate(0, -100%);
+    visibility: hidden;
+  }
+
+  to {
+    transform: translate(0, 0);
+    visibility: visible;
+  }
+}
+
+/*-------------------------*/
 
 a {
 	color: white;
@@ -114,6 +130,7 @@ h1 {
 	background-color: grey;
 	display: flex;
 	flex-direction: column;
+
 }
 
 h2 {
@@ -148,10 +165,6 @@ p, .contact-form {
 
 /*-----Testimionials-----*/
 .test-fade {
-	display: none;
-}
-
-#test-hide {
 	display: none;
 }
 

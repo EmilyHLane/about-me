@@ -30,6 +30,18 @@ function closeNav() {
     //slide nav up
 }
 
+
+//smooth scrolling for links
+$(document).on('click', 'a[href^="#"]', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
+
+
 //set listener for scroll and resize to check if testimonial section visible 
 $(window).on("resize scroll", function() {
 	var elementTop = $(".test-container").offset().top;
@@ -45,36 +57,42 @@ $(window).on("resize scroll", function() {
 //working code to fade in and out and stop at last one
 //how to make this better?
 
+//fadeInOut function called if testimonial content area is in view
 function fadeInOut() {
+	//turns off scroll and resize event listener
 	$(window).off("resize scroll");
+	//fade in test-1, which is a p element
 	setTimeout(function () {
 	$(".test-1").fadeIn(500)}, 400);
 	fadeOut1()
 }
-	
+
+//fade out test-1 	
 function fadeOut1() { 
 	setTimeout(function () {
 	$(".test-1").fadeOut(500)}, 3000);
 	fadeIn2()
 }
 
+//fade in test-2 p element
 function fadeIn2() {
 	setTimeout(function () {
 	$(".test-2").fadeIn(500)}, 4000);
 	fadeOut2()
 }
-	
+
+//fade out test-2	
 function fadeOut2() { 
 	setTimeout(function () {
 	$(".test-2").fadeOut(500)}, 7000);
 	fadeIn3()
 }
 
+//fade in test-3 p element
 function fadeIn3() {
 	setTimeout(function () {
 	$(".test-3").fadeIn(500)}, 8000);
 }
-
 
 
 
