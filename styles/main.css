@@ -53,12 +53,6 @@ body {
 	height: 300px;
 }
 
-/*.nav-links {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-}*/
-
 a {
 	color: white;
 	font-size: 1.4em;
@@ -102,19 +96,6 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 }
-
-/*-----profile pic styles if needed-----*/
-/*.profile-pic-container {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	width: 350px;
-}
-
-.profile-pic {
-	border: 1px solid white;
-	height: 200px;
-}*/
 
 h1 {
 	font-size: 1.7em;
@@ -166,6 +147,10 @@ p, .contact-form {
 }
 
 /*-----Testimionials-----*/
+.test-fade {
+	display: none;
+}
+
 #test-hide {
 	display: none;
 }
@@ -174,6 +159,7 @@ p, .contact-form {
 	background-color: lightgreen;
 	height: 300px;
 }
+
 
 /*-----contact-----*/
 
@@ -195,6 +181,7 @@ input, textarea, button {
 
 input, textarea {
 	margin-bottom: 1em;
+	width: 100%;
 }
 
 textarea {
@@ -291,6 +278,7 @@ footer p {
 
 	.test-container {
 		padding: 0 3em;
+		height: 200px;
 	}
 
 	.contact-form {
