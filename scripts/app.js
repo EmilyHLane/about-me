@@ -3,7 +3,6 @@ $( document ).ready(function() {
     console.log( "ready!" );
 });
 
-
 //show nav on hamburger click
 $(".fa-bars").on("click", showNav);
 
@@ -33,18 +32,30 @@ function closeNav() {
     }, 1000);
 }
 
-
 //smooth scrolling for nav links
-$(document).on('click', '.nav-links a[href^="#"]', function (e) {
+$(document).on("click", ".nav-links a", function (e) {
     e.preventDefault();
-
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
 
 
-
+//-----hightlight navlink when user scrolls to section------
+//---working code for about container only----
+$(window).on("scroll", function() {
+	var elementTop = $(".about-container").offset().top;
+	var elementBottom = elementTop + $(".about-container").outerHeight();
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+	
+	if (elementBottom > viewportTop && elementTop < viewportBottom) {
+		//add class with font weight 700
+		$(".nav-about").addClass("highlight");
+		}	
+})
+		
+//combine with above function for nav highlight?		
 //set listener for scroll and resize to check if testimonial section visible 
 $(window).on("resize scroll", function() {
 	var elementTop = $(".test-container").offset().top;
@@ -97,78 +108,3 @@ function fadeIn3() {
 	$(".test-3").fadeIn(500)}, 8000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // <ul class="testimonial-list">
-// // 		<li>First</li>
-// // 		<li>Second</li>
-// // 		<li>Third</li>
-// // </ul>
-
-// // function testingThis() { 
-// // var testList = $(".testimonial-list").children();
-// // testList.addClass("another-new-class");
-// // //console.log(testList[0]);
-// // for (var i = 0; i < testList.length; i++) {
-// //  	console.log(testList[i]);
-// //  	console.log(this);
-// // 	}
-// // }
-
-// //
-// function fadeInOut() {
-
-// 	$(window).off("resize scroll");	
-	
-// 	function fadeIn() {
-// 		var testList = $(".testimonial-list").children();
-// 		for (var i = 0; i < testList.length; i++) {
-// 			var x = testList[i];
-// 			$(x).delay(800).fadeIn(900)
-// 			};
-
-
-// 		// console.log(x);
-// 		// 	setTimeout(function () {
-// 		// 	console.log(x);	
-// 		// 		$(x).fadeIn(500)
-// 		// 	}, 1000);
-	
-
-// 			// function fadeOut() { 
-// 			// 	setTimeout(function () {
-// 			// 	$(x).fadeOut(500)}, 1000, fadeIn())
-// 		 //    }
-// 	}
-
-// 	fadeIn();
-// }
-
-
-//
-//wrap in loop for each testimonial
-// function fadeInOut() {
-// 	$(window).off("resize scroll");
-// 	setTimeout(function () {
-// 	$(".test-1").fadeIn(500)}, 400);
-// 	fadeItOut()
-// }
-	
-// function fadeItOut() { 
-// 	setTimeout(function () {
-// 	$(".test-1").fadeOut(500)}, 3000)
-// }
-//wrap

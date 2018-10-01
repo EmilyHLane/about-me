@@ -97,6 +97,10 @@ a:hover {
 	font-weight: 700;
 }
 
+.highlight {
+	font-weight: 700;
+}
+
 .close-show {
 	color: white;
 	font-size: 2em;
@@ -332,7 +336,8 @@ footer p {
 	}
 
 	.nav-container {
-		position: static;
+		position: sticky;
+		z-index: 10;
 	}
 
 	.top-nav {
