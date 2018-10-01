@@ -4,7 +4,6 @@ $( document ).ready(function() {
 });
 
 
-
 //show nav on hamburger click
 $(".fa-bars").on("click", showNav);
 
