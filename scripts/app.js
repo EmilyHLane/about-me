@@ -45,13 +45,53 @@ $(window).on("scroll", function() {
 	var elementBottom = elementTop + $(".about-container").outerHeight();
 	var viewportTop = $(window).scrollTop();
 	var viewportBottom = viewportTop + $(window).height();
-	
 	if (elementBottom > viewportTop && elementTop < viewportBottom) {
 		//add class with font weight 700
 		$(".nav-about").addClass("highlight");
+		$(".nav-port").removeClass("highlight");
+		$(".nav-test").removeClass("highlight");
 		}	
 })
-		
+	
+$(window).on("scroll", function() {
+	var elementTop = $(".carousel").offset().top;
+	var elementBottom = elementTop + $(".carousel").outerHeight();
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop -50 + $(window).height();
+	console.log(elementTop, viewportBottom);
+	if (elementBottom > viewportTop && elementTop < viewportBottom) {
+		//add class with font weight 700
+		$(".nav-port").addClass("highlight");
+		$(".nav-about").removeClass("highlight");
+		$(".nav-test").removeClass("highlight");
+		}	
+})
+
+$(window).on("scroll", function() {
+	var elementTop = $(".test-container").offset().top;
+	var elementBottom = elementTop + $(".test-container").outerHeight();
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+	if (elementBottom > viewportTop && elementTop < viewportBottom) {
+		//add class with font weight 700
+		$(".nav-test").addClass("highlight");
+		$(".nav-port").removeClass("highlight");
+		}	
+})
+
+$(window).on("scroll", function() {
+	var elementTop = $(".contact-container").offset().top;
+	var elementBottom = elementTop + $(".contact-container").outerHeight();
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+	if (elementBottom > viewportTop && elementTop < viewportBottom) {
+		//add class with font weight 700
+		$(".nav-contact").addClass("highlight");
+		$(".nav-test").removeClass("highlight");
+		}	
+})
+
+
 //combine with above function for nav highlight?		
 //set listener for scroll and resize to check if testimonial section visible 
 $(window).on("resize scroll", function() {

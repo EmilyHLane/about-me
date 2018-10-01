@@ -33,7 +33,7 @@ WDI Project 0 - Create an About Me Website
 	* Adjust HTML and CSS files where needed
 	* Test frequently 
 	* Commit as sections are completed
-9. Cleanup design and layout as neede, as time allows	
+9. Cleanup design and layout as needed, as time allows	
 
 
 ## Unsolved Problems
@@ -55,5 +55,5 @@ WDI Project 0 - Create an About Me Website
 
 ### Code Samples
 1. Had an issue where it looked strange when the hamburger icon disappeared before the nav was scrolled up. Solved this by adding a timeout to delay removing the icon until scroll up was complete: 
-!(images/code_snippet.png)
+!(images/codesnippet.png)
 
