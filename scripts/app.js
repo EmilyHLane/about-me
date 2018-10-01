@@ -19,12 +19,9 @@ function showNav() {
 $(".fa-times").on("click", closeNav);
 
 function closeNav() {
-	//$(".nav-links").toggleClass("nav-small");
  	$(".nav-links").toggleClass("nav-hide");
     $(".fa-times").toggleClass("close-show");
     $(".fa-times").attr("id", "close-hide");
-    // $(".fa-bars").toggle("#hamburger-hide");
-    //slide nav up--->before hiding, slide it up -->add delay to hide?
     $(".nav-links").toggleClass("nav-small-slideUp");
     setTimeout(function () {
     	$(".nav-links").toggleClass("nav-small");
