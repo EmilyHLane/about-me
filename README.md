@@ -54,6 +54,6 @@ WDI Project 0 - Create an About Me Website
 2. Finding a lightbox that worked
 
 ### Code Samples
-1. Had an issue where it looked strange when the hamburger icon disappeared before the nav was scrolled up. Solved this by adding a timeout to delay removing the icon until scroll up was complete: 
+1. Had an issue where it looked strange when the hamburger icon reappeared before the nav was done scrolling up. Solved this by adding a timeout to delay adding the icon until scroll up was complete: 
 ![code](images/codesnippet.png)
 
