@@ -316,6 +316,7 @@ footer p {
 
 	.about-text:nth-of-type(2) {
 		padding-right: 3em;
+		padding-top: 1em;
 	}
 
 	.test-container {
